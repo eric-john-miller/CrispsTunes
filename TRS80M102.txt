@@ -45,7 +45,7 @@
 670 IF DI THEN MU=1/MU
 680 IF MU=0 THEN MU=1
 690 IF RH THEN MU= MU*RM
-700 DU=INT(32/MU)
+700 DU=INT(MU)*6
 710 F$="":IF SH<>0 THEN F$="#":IF SH<0 THEN F$="$"
 720 PRINT N$;F$;OC;"=";MU;" ";
 730 REM Note (NT) is numeric note, 0 is middle C.
